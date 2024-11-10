@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Counseling - Uplift</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Uplift Logo"></a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="counseling.html" class="active">Counseling</a></li>
+            <li><a href="forums.html">Forums</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+<!-- Counseling Section -->
+<section id="counseling">
+    <h2>Meet Our Counselors</h2>
+    <p>Connect with our experienced professionals to guide you through your mental health journey.</p>
+    <div class="counselors-scroll">
+        <div class="counselors-grid">
+            <!-- Counselor Item 1 -->
+            <div class="counselor-item">
+                <img src="c1.jpeg" alt="Counselor 1" class="counselor-image">
+                <h3>Dr. Sudip Poudel</h3>
+                <p>Psychologist</p>
+                <p>PhD in Clinical Psychology</p>
+            </div>
+            <!-- Counselor Item 2 -->
+            <div class="counselor-item">
+                <img src="c2.jpeg" alt="Counselor 2" class="counselor-image">
+                <h3>Mr. Sakar Pudasaini</h3>
+                <p>Counselor</p>
+                <p>MA in Mental Health Counseling</p>
+            </div>
+            <!-- Counselor Item 3 -->
+            <div class="counselor-item">
+                <img src="c3.jpeg" alt="Counselor 3" class="counselor-image">
+                <h3>Mr. Nabaraj Poudel</h3>
+                <p>Therapist</p>
+                <p>MSW, Licensed Clinical Social Worker</p>
+            </div>
+            <!-- Additional Counselor Items -->
+            <div class="counselor-item">
+                <img src="c4.jpeg" alt="Counselor 4" class="counselor-image">
+                <h3>Mr. Saroj Lamichhane</h3>
+                <p>Counselor</p>
+                <p>MSc in Counseling Psychology</p>
+            </div>
+            <div class="counselor-item">
+                <img src="c5.jpeg" alt="Counselor 5" class="counselor-image">
+                <h3>Dr. Anish Devkota</h3>
+                <p>Psychologist</p>
+                <p>PhD in Behavioral Science</p>
+            </div>
+            <!-- Add more counselors as needed -->
+        </div>
+    </div>
+                                    <!-- View All Link -->
+                                    <div class="view-all">
+                                        <a href="counseling.html">View All <span class="arrow">&rarr;</span></a>
+                                    </div>
+</section>
+
+
+<!-- Appointment Booking Section -->
+<section id="booking">
+    <div class="booking-container">
+        <div class="booking-text">
+            <h2>Book an Appointment</h2>
+            <p>Fill out the form below to schedule a consultation with one of our counselors.</p>
+        </div>
+        <div class="booking-form-container">
+            <form action="#" method="POST" class="booking-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone Number" required>
+                <textarea placeholder="Message (optional)" rows="4"></textarea>
+                <select required>
+                    <option value="" disabled selected>Select Counselor</option>
+                    <option value="dr_sudip">Dr. Sudip Poudel</option>
+                    <option value="mr_sakar">Mr. Sakar Pudasaini</option>
+                    <option value="mr_nabaraj">Mr. Nabaraj Poudel</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FAQs Section -->
+<section id="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <h3 class="faq-question" data-toggle="faq1">What types of counseling do you offer?</h3>
+            <p class="faq-answer" id="faq1">We offer individual counseling, group therapy, and family counseling.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question" data-toggle="faq2">How do I know if counseling is right for me?</h3>
+            <p class="faq-answer" id="faq2">If you're feeling overwhelmed, anxious, or just need someone to talk to, counseling can be very beneficial.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question" data-toggle="faq3">What should I expect in my first session?</h3>
+            <p class="faq-answer" id="faq3">Your first session will focus on understanding your needs and establishing a rapport with your counselor.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question" data-toggle="faq4">Can I choose my counselor?</h3>
+            <p class="faq-answer" id="faq4">Yes, you can choose your counselor based on their expertise and your preferences.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question" data-toggle="faq5">How long do the sessions last?</h3>
+            <p class="faq-answer" id="faq5">Sessions typically last between 50 to 60 minutes, depending on the type of counseling.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question" data-toggle="faq6">What if I need to cancel my appointment?</h3>
+            <p class="faq-answer" id="faq6">We understand that life happens. Please inform us as soon as possible, and we'll reschedule your appointment.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="subscribe-section">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with the latest mental health resources and support.</p>
+            <form action="#" method="POST" class="subscribe-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <p>&copy; 2024 Uplift. All Rights Reserved.</p>
+        <a href="#terms">Terms of Service</a> | 
+        <a href="#privacy">Privacy Policy</a> | 
+        <a href="#faq">FAQ</a> | 
+        <a href="#contact">Contact Us</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
