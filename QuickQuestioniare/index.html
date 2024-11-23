@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uplift - Mental Health Platform</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .feedback,
+        .recommendation {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .questioniare-form-section {
+            text-align: left;
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            margin-top: 30px;
+            color: #4CAF50;
+        }
+
+        .questioniare-form-section button {
+            background-color: #4CAF50;
+            /* Green */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .questioniare-form-section button:hover {
+            background-color: #45a049;
+            /* Darker Green */
+            transform: scale(1.05);
+        }
+
+        .questioniare-form-section button:active {
+            background-color: #3e8e41;
+            /* Even Darker Green */
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="../index.html"><img src="../logo.png" alt="Uplift Logo"></a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../resources.html">Resources</a></li>
+            <li><a href="index.html" class="active">Questionnaire</a></li>
+            <li><a href="../counseling.html">Counseling</a></li>
+            <li><a href="../forums.html">Forums</a></li>
+            <li><a href="../login.html">Login</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="questioniare-form-section">
+            <h1>Mental Health Questionnaire</h1>
+            <form id="questionnaire">
+                <div class="section-title">Section 1: General Well-being</div>
+                <div class="question">
+                    <label>1. How often do you feel overwhelmed by your responsibilities?</label><br>
+                    <input type="radio" name="overwhelmed" value="5"> A) Never<br>
+                    <input type="radio" name="overwhelmed" value="4"> B) Rarely<br>
+                    <input type="radio" name="overwhelmed" value="3"> C) Sometimes<br>
+                    <input type="radio" name="overwhelmed" value="2"> D) Often<br>
+                    <input type="radio" name="overwhelmed" value="1"> E) Always<br>
+                </div>
+
+                <div class="question">
+                    <label>2. How would you rate your overall mental health in the past month?</label><br>
+                    <input type="radio" name="mentalHealth" value="5"> A) Excellent<br>
+                    <input type="radio" name="mentalHealth" value="4"> B) Good<br>
+                    <input type="radio" name="mentalHealth" value="3"> C) Fair<br>
+                    <input type="radio" name="mentalHealth" value="2"> D) Poor<br>
+                    <input type="radio" name="mentalHealth" value="1"> E) Very poor<br>
+                </div>
+
+                <div class="question">
+                    <label>3. How often do you find it difficult to relax?</label><br>
+                    <input type="radio" name="relax" value="5"> A) Never<br>
+                    <input type="radio" name="relax" value="4"> B) Rarely<br>
+                    <input type="radio" name="relax" value="3"> C) Sometimes<br>
+                    <input type="radio" name="relax" value="2"> D) Often<br>
+                    <input type="radio" name="relax" value="1"> E) Always<br>
+                </div>
+                <div class="section-title">Section 2: Emotional States</div>
+
+                <div class="question">
+                    <label>4. How often do you experience feelings of sadness or hopelessness?</label><br>
+                    <input type="radio" name="sadness" value="5"> A) Never<br>
+                    <input type="radio" name="sadness" value="4"> B) Rarely<br>
+                    <input type="radio" name="sadness" value="3"> C) Sometimes<br>
+                    <input type="radio" name="sadness" value="2"> D) Often<br>
+                    <input type="radio" name="sadness" value="1"> E) Always<br>
+                </div>
+
+                <div class="question">
+                    <label>5. How often do you feel anxious or worried without a clear reason?</label><br>
+                    <input type="radio" name="anxiety" value="5"> A) Never<br>
+                    <input type="radio" name="anxiety" value="4"> B) Rarely<br>
+                    <input type="radio" name="anxiety" value="3"> C) Sometimes<br>
+                    <input type="radio" name="anxiety" value="2"> D) Often<br>
+                    <input type="radio" name="anxiety" value="1"> E) Always<br>
+                </div>
+
+                <div class="question">
+                    <label>6. How would you describe your ability to cope with stress?</label><br>
+                    <input type="radio" name="stressCoping" value="5"> A) Excellent<br>
+                    <input type="radio" name="stressCoping" value="4"> B) Good<br>
+                    <input type="radio" name="stressCoping" value="3"> C) Fair<br>
+                    <input type="radio" name="stressCoping" value="2"> D) Poor<br>
+                    <input type="radio" name="stressCoping" value="1"> E) Very poor<br>
+                </div>
+
+                <div class="section-title">Section 3: Social Interaction</div>
+
+                <div class="question">
+                    <label>7. How often do you feel isolated or disconnected from others?</label><br>
+                    <input type="radio" name="isolation" value="5"> A) Never<br>
+                    <input type="radio" name="isolation" value="4"> B) Rarely<br>
+                    <input type="radio" name="isolation" value="3"> C) Sometimes<br>
+                    <input type="radio" name="isolation" value="2"> D) Often<br>
+                    <input type="radio" name="isolation" value="1"> E) Always<br>
+                </div>
+
+                <div class="question">
+                    <label>8. How comfortable are you discussing your mental health with friends or family?</label><br>
+                    <input type="radio" name="discussion" value="5"> A) Very comfortable<br>
+                    <input type="radio" name="discussion" value="4"> B) Comfortable<br>
+                    <input type="radio" name="discussion" value="3"> C) Neutral<br>
+                    <input type="radio" name="discussion" value="2"> D) Uncomfortable<br>
+                    <input type="radio" name="discussion" value="1"> E) Very uncomfortable<br>
+                </div>
+
+                <div class="question">
+                    <label>9. How satisfied are you with the quality of your social relationships?</label><br>
+                    <input type="radio" name="relationships" value="5"> A) Very satisfied<br>
+                    <input type="radio" name="relationships" value="4"> B) Satisfied<br>
+                    <input type="radio" name="relationships" value="3"> C) Neutral<br>
+                    <input type="radio" name="relationships" value="2"> D) Dissatisfied<br>
+                    <input type="radio" name="relationships" value="1"> E) Very dissatisfied<br>
+                </div>
+
+                <div class="section-title">Section 4: Lifestyle and Activities</div>
+
+                <div class="question">
+                    <label>10. How often do you engage in physical activities or exercise?</label><br>
+                    <input type="radio" name="exercise" value="5"> A) Daily<br>
+                    <input type="radio" name="exercise" value="4"> B) A few times a week<br>
+                    <input type="radio" name="exercise" value="3"> C) Once a week<br>
+                    <input type="radio" name="exercise" value="2"> D) Rarely<br>
+                    <input type="radio" name="exercise" value="1"> E) Never<br>
+                </div>
+
+                <div class="question">
+                    <label>11. How often do you participate in hobbies or activities you enjoy?</label><br>
+                    <input type="radio" name="hobbies" value="5"> A) Daily<br>
+                    <input type="radio" name="hobbies" value="4"> B) A few times a week<br>
+                    <input type="radio" name="hobbies" value="3"> C) Once a week<br>
+                    <input type="radio" name="hobbies" value="2"> D) Rarely<br>
+                    <input type="radio" name="hobbies" value="1"> E) Never<br>
+                </div>
+
+                <div class="question">
+                    <label>12. How many hours of sleep do you get on an average night?</label><br>
+                    <input type="radio" name="sleep" value="5"> A) 7-9 hours<br>
+                    <input type="radio" name="sleep" value="4"> B) 5-6 hours<br>
+                    <input type="radio" name="sleep" value="3"> C) Less than 5 hours<br>
+                    <input type="radio" name="sleep" value="2"> D) More than 9 hours<br>
+                    <input type="radio" name="sleep" value="1"> E) Varies widely<br>
+                </div>
+
+                <button type="button" onclick="calculateFeedback()">Submit</button>
+            </form>
+
+            <div class="feedback" id="feedback"></div>
+            <div class="recommendation" id="recommendation"></div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="subscribe-section">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with the latest mental health resources and support.</p>
+            <form action="#" method="POST" class="subscribe-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <p>&copy; 2024 Uplift. All Rights Reserved.</p>
+        <a href="#terms">Terms of Service</a> |
+        <a href="#privacy">Privacy Policy</a> |
+        <a href="#faq">FAQ</a> |
+        <a href="#contact">Contact Us</a>
+    </footer>
+
+
+    <!-- Link to the JavaScript file -->
+    <script src="questioniare.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
